@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            body {
+                background-color: #edece1;
+            }
+            .wrap {
+                width: 960px;
+                margin: auto;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .timeline {
+                padding: 100px 0;
+            }
+            .timeline li {
+                width: 50%;
+                box-sizing: border-box;
+                padding: 20px 0;
+                position: relative;
+            }
+            .timeline li:nth-child(odd) {
+                float: left;
+                padding-right: 100px;
+            }
+            .timeline li:nth-child(even) {
+                float: right;
+                padding-left: 100px;
+                transform: translateY(50%);
+            }
+            .timeline li:nth-child(odd)::after {
+                right: 0;
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background-color: #ccc;
+                top: 0;
+                z-index: -1;
+            }
+            .timeline li:last-child::after {
+                height: 50%;
+            }
+            .timeline li::before {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #aaa;
+                z-index: 2;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            .timeline li:nth-child(odd)::before {
+                right: -10px;
+            }
+            .timeline li:nth-child(even)::before {
+                left: -10px;
+            }
+            .timeline a {
+                text-decoration: none;
+                background-color: #fff;
+                display: block;
+                border: 1px solid #aaa;
+                box-sizing: border-box;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 3px 3px 5px #888;
+            }
+            .timeline a:hover {
+                background-color: #6fa5fa;
+            }
+            .timeline a:hover h2,
+            .timeline a:hover p {
+                color: #fff;
+            }
+            .timeline h2 {
+                color: #333;
+                font-family: 'Noto Sans TC', sans-serif;
+                font-weight: 700;
+            }
+            .timeline p {
+                color: #666;
+                font-family: 'Noto Sans TC', sans-serif;
+                font-weight: 300;
+            }
+            .timeline h2::after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 100px;
+                background-color: #aaa;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            .timeline li:nth-child(odd) h2::after {
+                right: 0;
+            }
+            .timeline li:nth-child(even) h2::after {
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <h1>巴拉巴拉</h1>
+            <p>
+                批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉批哩啪拉
+            </p>
+            <ul class="timeline">
+                <li>
+                    <a href="#"
+                        ><h2>吧吧吧吧</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂
+                        </p></a
+                    >
+                </li>
+                <li>
+                    <a href="#"
+                        ><h2>拉啦啦啦</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂
+                        </p></a
+                    >
+                </li>
+                <li>
+                    <a href="#"
+                        ><h2>嘿嘿嘿嘿</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂
+                        </p></a
+                    >
+                </li>
+                <li>
+                    <a href="#"
+                        ><h2>嗚嗚嗚嗚</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂
+                        </p></a
+                    >
+                </li>
+                <li>
+                    <a href="#"
+                        ><h2>唧唧唧唧</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂ㄒ
+                        </p></a
+                    >
+                </li>
+                <li>
+                    <a href="#"
+                        ><h2>吱吱吱吱</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂
+                        </p></a
+                    >
+                </li>
+                <li>
+                    <a href="#"
+                        ><h2>啪啪啪啪</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂
+                        </p></a
+                    >
+                </li>
+                <li>
+                    <a href="#"
+                        ><h2>啪啪啪啪</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂
+                        </p></a
+                    >
+                </li>
+                <li>
+                    <a href="#"
+                        ><h2>啪啪啪啪</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂
+                        </p></a
+                    >
+                </li>
+                <li>
+                    <a href="#"
+                        ><h2>啪啪啪啪</h2>
+                        <p>
+                            亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂亂
+                        </p></a
+                    >
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

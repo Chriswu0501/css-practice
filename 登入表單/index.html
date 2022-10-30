@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            html,
+            body {
+                height: 100%;
+            }
+            body {
+                background: url('https://images.unsplash.com/photo-1666166079252-607e0759766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80')
+                    no-repeat center center / cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .login {
+                width: 600px;
+                height: 500px;
+                background-color: rgba(0, 0, 0, 0.2);
+                border: 10px solid #fff;
+                border-radius: 10px;
+                box-shadow: 0 0 30px #000;
+                backdrop-filter: blur(3px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .form {
+                width: 400px;
+                color: #fff;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .form h2 {
+                margin-bottom: 20px;
+                border-bottom: 1px solid #fff;
+                padding-bottom: 2px;
+            }
+            .form .group {
+                margin-bottom: 20px;
+            }
+            .form label {
+                line-height: 2;
+            }
+            .form input {
+                width: 100%;
+                border: 1px solid #aaa;
+                line-height: 3;
+                border-radius: 5px;
+            }
+            .form .btn-group {
+                font-size: 0;
+                margin-top: 50px;
+            }
+            .form .btn {
+                font-size: 20px;
+                border-radius: 5px;
+                border: none;
+                background-color: #6ab4fe;
+                width: 190px;
+                padding: 10px 0;
+                color: #fff;
+            }
+            .form .btn + .btn {
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <div class="form">
+                <h2>會員登入</h2>
+                <div class="group">
+                    <label for="username">帳號</label>
+                    <input type="text" id="username" />
+                </div>
+                <div class="group">
+                    <label for="password">密碼</label>
+                    <input type="text" id="password" />
+                </div>
+                <div class="btn-group">
+                    <button class="btn">登入</button>
+                    <button class="btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

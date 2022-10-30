@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .wrap {
+                margin: 100px 0;
+            }
+            .container {
+                position: relative;
+                width: 1200px;
+                margin: auto;
+            }
+            .container h1 {
+                width: 400px;
+                font-size: 90px;
+                box-sizing: border-box;
+                padding: 15px;
+                color: #aaa;
+                float: right;
+                position: relative;
+            }
+            .container h1::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 250px;
+                height: 250px;
+                border: 50px solid #f1c555;
+                z-index: -1;
+                bottom: 0;
+                transform: rotate(20deg);
+            }
+            .container .txt {
+                column-count: 2;
+                column-gap: 30px;
+            }
+            .container p {
+                line-height: 1.6;
+                margin-bottom: 1em;
+            }
+            .container p:first-child::first-letter {
+                font-size: 40px;
+                float: left;
+                padding-right: 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <h1>Sit amet consectetur</h1>
+                <div class="txt">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Libero id faucibus nisl tincidunt eget.
+                        Habitasse platea dictumst quisque sagittis purus. Nunc
+                        eget lorem dolor sed viverra. Egestas maecenas pharetra
+                        convallis posuere morbi. Vitae elementum curabitur vitae
+                        nunc sed velit dignissim sodales ut. Blandit cursus
+                        risus at ultrices mi tempus.
+                    </p>
+                    <p>
+                        Commodo elit at imperdiet dui. Enim sit amet venenatis
+                        urna cursus eget nunc scelerisque. Malesuada fames ac
+                        turpis egestas sed tempus. Facilisi morbi tempus iaculis
+                        urna id volutpat lacus laoreet non. Facilisis leo vel
+                        fringilla est ullamcorper. Ac tortor dignissim convallis
+                        aenean et tortor at risus. At augue eget arcu dictum
+                        varius duis at. Id ornare arcu odio ut sem nulla
+                        pharetra diam. Tristique nulla aliquet enim tortor.
+                        Pellentesque habitant morbi tristique senectus.
+                        Vestibulum morbi blandit cursus risus at. Libero
+                        volutpat sed cras ornare arcu. Dui faucibus in ornare
+                        quam viverra orci.
+                    </p>
+                    <p>
+                        Facilisis mauris sit amet massa vitae tortor. Nisi quis
+                        eleifend quam adipiscing vitae proin sagittis. Feugiat
+                        scelerisque varius morbi enim. Neque laoreet suspendisse
+                        interdum consectetur libero. Risus commodo viverra
+                        maecenas accumsan lacus vel facilisis. Lorem ipsum dolor
+                        sit amet. Morbi non arcu risus quis varius quam.
+                    </p>
+                    <p>
+                        Nunc id cursus metus aliquam eleifend mi in nulla.
+                        Turpis tincidunt id aliquet risus feugiat in ante metus.
+                        Nec tincidunt praesent semper feugiat nibh sed. Mi proin
+                        sed libero enim sed faucibus. Et odio pellentesque diam
+                        volutpat. Diam sit amet nisl suscipit. Egestas sed
+                        tempus urna et pharetra pharetra massa massa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            body {
+                background: linear-gradient(90deg, #df3094, #fd9009);
+            }
+            .wrap {
+                padding: 10px 0;
+                background: #508d69;
+                box-shadow: 0px 5px 5px rgba(19, 52, 32, 0.7);
+            }
+            .breadcrumb {
+                width: 90%;
+                margin: auto;
+                display: flex;
+            }
+            .breadcrumb li {
+                padding: 0 20px;
+            }
+            .breadcrumb a {
+                text-decoration: none;
+                color: #fff;
+            }
+            .breadcrumb a:hover,
+            .breadcrumb li:last-child a {
+                color: #ff0;
+            }
+            .breadcrumb li + li {
+                padding-left: 0;
+            }
+            .breadcrumb li + li::before {
+                content: '>';
+                color: #fff;
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <ol class="breadcrumb">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">教學</a></li>
+                <li><a href="#">技巧</a></li>
+                <li><a href="#">巴拉巴拉</a></li>
+                <li><a href="#">細節</a></li>
+            </ol>
+        </div>
+    </body>
+</html>

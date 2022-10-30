@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            html,
+            body {
+                height: 100%;
+            }
+            body {
+                display: flex;
+                align-items: center;
+            }
+            .dialogue {
+                width: 500px;
+                padding: 20px;
+                box-shadow: 0 0 10px #3e92cc;
+                background-color: #f4f5f7;
+            }
+            .user {
+                display: flex;
+                margin-bottom: 20px;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .local {
+                justify-content: flex-end;
+            }
+            .user .avatar {
+                width: 60px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+            .user .pic {
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .user .pic img {
+                width: 100%;
+                vertical-align: middle;
+            }
+            .user .txt {
+                background-color: #aaa;
+                padding: 16px;
+                border-radius: 10px;
+                position: relative;
+            }
+            .remote .txt {
+                margin-left: 20px;
+                margin-right: 80px;
+                background-color: #fff;
+                color: #3c92cc;
+            }
+            .local .txt {
+                margin-right: 20px;
+                margin-left: 80px;
+                order: -1;
+                background-color: #3c92cc;
+                color: #fff;
+            }
+            .remote .txt::before,
+            .local .txt::before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+            }
+            .remote .txt::before {
+                border-right: 10px solid #fff;
+                left: -10px;
+            }
+            .local .txt::before {
+                border-left: 10px solid #3c92cc;
+                right: -10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dialogue">
+            <div class="user remote">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="pic1.jpg" alt="pic1" />
+                    </div>
+                    <div class="name">Chrissy</div>
+                </div>
+                <div class="txt">哈囉哈囉</div>
+            </div>
+            <div class="user local">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="pic2.jpg" alt="pic2" />
+                    </div>
+                    <div class="name">Chris</div>
+                </div>
+                <div class="txt">巴拉巴拉巴拉巴拉巴拉</div>
+            </div>
+            <div class="user local">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="pic2.jpg" alt="pic2" />
+                    </div>
+                    <div class="name">Chris</div>
+                </div>
+                <div class="txt">噗嚕噗嚕噗噗噗噗噗</div>
+            </div>
+            <div class="user remote">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="pic1.jpg" alt="pic1" />
+                    </div>
+                    <div class="name">Chrissy</div>
+                </div>
+                <div class="txt">哦哦哦哦哦哦哦哦</div>
+            </div>
+        </div>
+    </body>
+</html>

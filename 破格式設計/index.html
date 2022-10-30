@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            html,
+            body {
+                height: 100%;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+            }
+            .wrap {
+                display: flex;
+                width: 1000px;
+                margin: 150px auto;
+                padding-top: 75px;
+            }
+            .item {
+                width: 300px;
+                margin: 0 15px;
+                text-align: center;
+                border: 10px solid #f0cec2;
+                background-color: #fff;
+                border-radius: 20px;
+                box-shadow: 10px 20px 50px #f7b6a7;
+            }
+            .item h3 {
+                color: #f5afac;
+            }
+            .item p {
+                color: #aaa;
+            }
+            .item .icon {
+                font-size: 65px;
+                line-height: 140px;
+                width: 150px;
+                height: 150px;
+                background-color: #fff;
+                margin: -75px auto 0;
+                border-radius: 50%;
+                color: #f5afac;
+                position: relative;
+            }
+            .item .icon::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-top: 10px solid #f0cec2;
+                border-right: 10px solid #f0cec2;
+                border-left: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                left: -10px;
+                top: -10px;
+                border-radius: 50%;
+                transform: rotate(-45deg);
+            }
+            .item .txt {
+                padding: 20px 20px 2em;
+            }
+            .item .txt h3 {
+                margin-bottom: 10px;
+            }
+            .item:hover i {
+                animation: ss 0.2s linear infinite alternate;
+            }
+            @keyframes ss {
+                0% {
+                    transform: rotate(-10deg);
+                }
+                100% {
+                    transform: rotate(10deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
+                <div class="txt">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Id aliquet risus feugiat in.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="txt">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Id aliquet risus feugiat in.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-bomb"></i>
+                </div>
+                <div class="txt">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Id aliquet risus feugiat in.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

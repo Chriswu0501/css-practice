@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            .banner {
+                height: 700px;
+                background: url('https://images.unsplash.com/photo-1666645220249-bc8a9a8b88d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+                    center top / cover;
+            }
+            .sec .container {
+                width: 1200px;
+                margin: auto;
+                display: flex;
+                padding: 100px 0;
+                position: relative;
+                z-index: 2;
+            }
+            .sec .item {
+                width: 570px;
+                margin: 0 15px;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .sec .item h2 {
+                margin-bottom: 1.1em;
+            }
+            .sec .item p {
+                line-height: 1.7;
+                margin-bottom: 1.3em;
+            }
+            .sec {
+                position: relative;
+            }
+            .sec::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                background-color: #f00;
+                top: 0;
+                left: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                background-color: #fff;
+                box-shadow: 178px 0px 0px 30px #fff, 327px 34px 0px 20px #fff,
+                    480px 9px 0px 60px #fff, 690px 71px 0px 60px #fff,
+                    880px 0 0 89px #fff, -178px 0px 0px 30px #fff,
+                    -327px 34px 0px 20px #fff, -480px 9px 0px 60px #fff,
+                    -690px 71px 0px 60px #fff, -880px 0 0 89px #fff;
+            }
+            .sec::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 200px;
+                background-color: #fff;
+                z-index: 1;
+                top: 0;
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner"></div>
+        <div class="sec">
+            <div class="container">
+                <div class="item">
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Commodo ullamcorper a lacus vestibulum sed
+                        arcu non odio. Tellus id interdum velit laoreet id donec
+                        ultrices.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Et molestie ac feugiat sed lectus
+                        vestibulum mattis. Turpis nunc eget lorem dolor sed
+                        viverra ipsum nunc aliquet.
+                    </p>
+                </div>
+                <div class="item">
+                    <h2>Orci phasellus</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Orci phasellus egestas tellus rutrum.
+                        Egestas purus viverra accumsan in nisl nisi scelerisque
+                        eu. Amet commodo nulla facilisi nullam.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Tortor aliquam nulla facilisi cras
+                        fermentum odio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .wrap {
+                margin: 100px 0;
+            }
+            .container {
+                width: 1200px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .container h1 {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 80px;
+                margin-bottom: 0.5em;
+            }
+            .container .txt {
+                flex-shrink: 0;
+                box-sizing: border-box;
+                position: relative;
+                padding: 1em;
+            }
+            .container .txt p {
+                margin-bottom: 1em;
+            }
+            .container .txt::before,
+            .container .txt::after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 50px;
+            }
+            .container .txt::before {
+                left: 0;
+                top: 0;
+                border-top: 3px solid #000;
+                border-left: 3px solid #000;
+            }
+            .container .txt::after {
+                right: 0;
+                bottom: 0;
+                border-right: 3px solid #000;
+                border-bottom: 3px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <h1>Nunc id cursus metus</h1>
+                <div class="txt">
+                    <p>
+                        Nunc id cursus metus aliquam eleifend mi in nulla.
+                        Turpis tincidunt id aliquet risus feugiat in ante metus.
+                        Nec tincidunt praesent semper feugiat nibh sed. Mi proin
+                        sed libero enim sed faucibus. Et odio pellentesque diam
+                        volutpat. Sit amet consectetur adipiscing elit
+                        pellentesque habitant. Egestas maecenas pharetra
+                        convallis posuere morbi leo.
+                    </p>
+                    <p>
+                        Diam sit amet nisl suscipit. Egestas sed tempus urna et
+                        pharetra pharetra massa massa. Duis tristique
+                        sollicitudin nibh sit amet commodo. Duis ut diam quam
+                        nulla porttitor massa id. Aliquam eleifend mi in nulla.
+                        Diam sollicitudin tempor id eu nisl nunc.
+                    </p>
+                    <p>
+                        Urna condimentum mattis pellentesque id nibh tortor id
+                        aliquet lectus. In vitae turpis massa sed. Semper auctor
+                        neque vitae tempus quam. Erat velit scelerisque in
+                        dictum non consectetur a erat nam. Augue lacus viverra
+                        vitae congue. Ullamcorper morbi tincidunt ornare massa
+                        eget egestas purus viverra accumsan. Sem nulla pharetra
+                        diam sit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

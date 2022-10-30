@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,700,900"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            .wrap {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                background: linear-gradient(-30deg, #fdaecb, #e7597f, #fe8556);
+            }
+            .container {
+                width: 1200px;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .item {
+                width: 368px;
+                margin: 0 15px;
+                display: flex;
+                background-color: #fff;
+                border: 1px solid #888;
+                box-shadow: 0 10px 30px rgba(160, 0, 0, 0.5);
+            }
+            .item .pic {
+                width: 50%;
+            }
+            .item .pic img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .item .txt {
+                width: 50%;
+                padding: 20px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .item .txt h2 {
+                margin-bottom: 0.4em;
+                font-weight: 900;
+            }
+            .item .txt p {
+                font-weight: 300;
+            }
+            .item .txt .btn {
+                line-height: 1.5em;
+                border: 1px solid #ccc;
+                padding: 0 1em;
+                align-self: flex-end;
+                text-decoration: none;
+                border-radius: 200px;
+                margin-top: auto;
+                color: #aaa;
+            }
+            .item .txt .btn:hover {
+                background-color: #ccc;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/400/400?random=10" />
+                    </div>
+                    <div class="txt">
+                        <h2>McClintock</h2>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not
+                            simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC, making it
+                            over 2000 years old.
+                        </p>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/400/400?random=20" />
+                    </div>
+                    <div class="txt">
+                        <h2>Lorem Ipsum</h2>
+                        <p>
+                            All the Lorem Ipsum generators on the Internet tend
+                            to repeat predefined chunks as necessary, making
+                            this the first true generator on the Internet. It
+                            uses a dictionary of over 200 Latin
+                        </p>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/400/400?random=30" />
+                    </div>
+                    <div class="txt">
+                        <h2>H. Rackham</h2>
+                        <p>
+                            But I must explain to you how all this mistaken idea
+                            of denouncing pleasure and praising pain was born
+                            and I will give you a complete account of the
+                            system, and expound the actual teachings of the
+                            great explorer of the truth, the master-builder of
+                            human happiness. No one rejects
+                        </p>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

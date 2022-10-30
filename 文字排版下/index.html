@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .wrap {
+                margin: 100px 0;
+            }
+            .container {
+                width: 1200px;
+                margin: auto;
+                display: flex;
+            }
+            .container h1 {
+                width: 400px;
+                flex-shrink: 0;
+                box-sizing: border-box;
+                order: 1;
+                font-size: 60px;
+                padding-left: 15px;
+                color: #aaa;
+                position: relative;
+            }
+            .container h1::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 150px;
+                height: 150px;
+                border: 30px solid #135555;
+                transform: rotate(10deg);
+                z-index: -1;
+            }
+            .container h1::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 150px;
+                height: 150px;
+                border: 30px solid #1f5ccc;
+                transform: rotate(15deg);
+                z-index: -1;
+            }
+            .container .txt {
+                width: 800px;
+                flex-shrink: 0;
+                box-sizing: border-box;
+                column-count: 2;
+                column-gap: 30px;
+                padding: 15px;
+                box-shadow: 0 0 20px #ccc;
+            }
+            .container .txt p {
+                margin-bottom: 1em;
+            }
+            .container .txt p:first-child::first-letter {
+                float: left;
+                font-size: 40px;
+                padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <h1>Nunc id cursus metus</h1>
+                <div class="txt">
+                    <p>
+                        Nunc id cursus metus aliquam eleifend mi in nulla.
+                        Turpis tincidunt id aliquet risus feugiat in ante metus.
+                        Nec tincidunt praesent semper feugiat nibh sed. Mi proin
+                        sed libero enim sed faucibus. Et odio pellentesque diam
+                        volutpat. Sit amet consectetur adipiscing elit
+                        pellentesque habitant. Egestas maecenas pharetra
+                        convallis posuere morbi leo.
+                    </p>
+                    <p>
+                        Diam sit amet nisl suscipit. Egestas sed tempus urna et
+                        pharetra pharetra massa massa. Duis tristique
+                        sollicitudin nibh sit amet commodo. Duis ut diam quam
+                        nulla porttitor massa id. Aliquam eleifend mi in nulla.
+                        Diam sollicitudin tempor id eu nisl nunc.
+                    </p>
+                    <p>
+                        Urna condimentum mattis pellentesque id nibh tortor id
+                        aliquet lectus. In vitae turpis massa sed. Semper auctor
+                        neque vitae tempus quam. Erat velit scelerisque in
+                        dictum non consectetur a erat nam. Augue lacus viverra
+                        vitae congue. Ullamcorper morbi tincidunt ornare massa
+                        eget egestas purus viverra accumsan. Sem nulla pharetra
+                        diam sit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

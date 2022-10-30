@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <style>
+            .main-header {
+                background: linear-gradient(0deg, #a1a1a1, #000000);
+            }
+            .main-header .container {
+                display: flex;
+                padding: 20px 0;
+                max-width: 1200px;
+                margin: auto;
+                align-items: center;
+            }
+            .main-header .logo {
+                width: 100px;
+            }
+            .main-header .logo img {
+                width: 100%;
+                vertical-align: middle;
+            }
+            .main-header .main-nav {
+                margin: auto;
+                display: flex;
+            }
+            .main-header .main-nav a {
+                text-decoration: none;
+                color: #fff;
+                padding: 5px 1em;
+                position: relative;
+                transform: translateY(0px);
+                transition: 0.3s;
+            }
+            .main-header .main-nav a:hover {
+                transform: translateY(-5px);
+            }
+            .main-header .main-nav a::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                right: 50%;
+                height: 0;
+                bottom: -5px;
+                border-bottom: 1px solid #fff;
+                transition: 0.3s;
+            }
+            .main-header .main-nav a:hover:after {
+                left: 0;
+                right: 0;
+            }
+            .main-header .header-search {
+                display: flex;
+            }
+            .main-header .header-search input,
+            .main-header .header-search button {
+                border: none;
+                background-color: #fff;
+                padding: 5px 10px;
+            }
+            .main-header .header-search input:focus {
+                outline: none;
+                background-color: #c1c1c1;
+            }
+            .main-header .header-search input {
+                border-radius: 200px 0 0 200px;
+            }
+            .main-header .header-search button {
+                border-radius: 0 200px 200px 0;
+            }
+        </style>
+
+        <header class="main-header">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img
+                        src="https://picsum.photos/100/100?random=10"
+                        alt="fakeimg"
+                    />
+                </a>
+                <nav class="main-nav">
+                    <a href="#">金魚都能懂的系列</a>
+                    <a href="#">暴力網頁入門系列</a>
+                    <a href="#">巴拉巴拉系列</a>
+                    <a href="#">原來如此系列</a>
+                </nav>
+                <form action="" class="header-search">
+                    <input type="search" value="" />
+                    <button>Search</button>
+                </form>
+            </div>
+        </header>
+
+        <style>
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-color: #ccc;
+                background: linear-gradient(115deg, #7bf, 50%, transparent 50%)
+                        center center / 100% 100%,
+                    url(https://picsum.photos/1200/600) right center / auto 100%;
+            }
+            .container {
+                width: 1200px;
+                height: 100%;
+                margin: auto;
+            }
+            .banner-txt {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            .banner-txt h1 {
+                font-size: 80px;
+                border-bottom: 1px solid #333;
+                font-weight: 900;
+            }
+            .banner-txt h1 small {
+                display: block;
+                font-size: 53px;
+                font-weight: 700;
+            }
+            .banner-txt h2 {
+                font-size: 50px;
+                font-weight: 700;
+            }
+            .banner-txt p {
+                font-size: 20px;
+                font-weight: 400;
+            }
+        </style>
+
+        <div class="banner">
+            <div class="container">
+                <div class="banner-txt">
+                    <h1>
+                        金魚都能懂的
+                        <small> 這個網頁畫面怎麼切 </small>
+                    </h1>
+                    <h2>圖文滿版區塊</h2>
+                    <p>
+                        巴拉巴拉嘎嘎嘎嘎呼呼呼呼呼
+                        <br />
+                        批批批粗雌吧雌哺吧痾拉拉拉
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .main-title {
+                margin: 100px 0;
+            }
+            .main-title .container {
+                width: 1200px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+            .main-title .container h1 {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 80px;
+                margin-bottom: 0.5em;
+                display: flex;
+            }
+            .main-title .container h1::before,
+            .main-title .container h1::after {
+                content: '';
+                display: block;
+                flex-grow: 1;
+                height: 3px;
+                margin: auto;
+                background-color: #000;
+            }
+            .main-title .container h1::before {
+                margin-right: 10px;
+            }
+            .main-title .container h1::after {
+                margin-left: 10px;
+            }
+            .main-title .container .txt {
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+            .main-title .container .txt p {
+                margin-bottom: 1em;
+            }
+        </style>
+
+        <div class="main-title">
+            <div class="container">
+                <h1>Nunc id cursus metus</h1>
+                <div class="txt">
+                    <p>
+                        Nunc id cursus metus aliquam eleifend mi in nulla.
+                        Turpis tincidunt id aliquet risus feugiat in ante metus.
+                        Nec tincidunt praesent semper feugiat nibh sed. Mi proin
+                        sed libero enim sed faucibus. Et odio pellentesque diam
+                        volutpat. Sit amet consectetur adipiscing elit
+                        pellentesque habitant. Egestas maecenas pharetra
+                        convallis posuere morbi leo. Sit amet consectetur
+                        adipiscing elit pellentesque habitant. Egestas maecenas
+                        pharetra convallis posuere morbi leo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .fish {
+                display: flex;
+                width: 1000px;
+                margin: 50px auto;
+                padding-top: 75px;
+            }
+            .fish .item {
+                width: 300px;
+                margin: 0 15px;
+                text-align: center;
+                border: 10px solid #f0cec2;
+                background-color: #fff;
+                border-radius: 20px;
+                box-shadow: 10px 20px 50px #f7b6a7;
+            }
+            .fish .item h3 {
+                color: #f5afac;
+            }
+            .fish .item p {
+                color: #aaa;
+            }
+            .fish .item .icon {
+                font-size: 65px;
+                line-height: 140px;
+                width: 150px;
+                height: 150px;
+                background-color: #fff;
+                margin: -75px auto 0;
+                border-radius: 50%;
+                color: #f5afac;
+                position: relative;
+            }
+            .fish .item .icon::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-top: 10px solid #f0cec2;
+                border-right: 10px solid #f0cec2;
+                border-left: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                left: -10px;
+                top: -10px;
+                border-radius: 50%;
+                transform: rotate(-45deg);
+            }
+            .fish .item .txt {
+                padding: 20px 20px 2em;
+            }
+            .fish .item .txt h3 {
+                margin-bottom: 10px;
+            }
+            .fish .item:hover i {
+                animation: ss 0.2s linear infinite alternate;
+            }
+            @keyframes ss {
+                0% {
+                    transform: rotate(-10deg);
+                }
+                100% {
+                    transform: rotate(10deg);
+                }
+            }
+        </style>
+
+        <div class="fish">
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-user-secret"></i></div>
+                <div class="txt">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Id aliquet risus feugiat in.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="txt">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Id aliquet risus feugiat in.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-bomb"></i>
+                </div>
+                <div class="txt">
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Id aliquet risus feugiat in.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .custom {
+                display: flex;
+                align-items: center;
+                margin: 150px auto;
+            }
+            .custom .container {
+                width: 1200px;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .custom .container h1 {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 80px;
+                margin-bottom: 0.5em;
+                display: flex;
+            }
+            .custom .container h1::before,
+            .custom .container h1::after {
+                content: '';
+                display: block;
+                flex-grow: 1;
+                height: 3px;
+                margin: auto;
+                background-color: #000;
+            }
+            .custom .container h1::before {
+                margin-right: 10px;
+            }
+            .custom .container h1::after {
+                margin-left: 10px;
+            }
+            .custom .item {
+                width: 368px;
+                height: 400px;
+                margin: 0 15px;
+                display: flex;
+                background-color: #fff;
+                border: 1px solid #888;
+                box-shadow: 0 10px 30px rgba(160, 0, 0, 0.5);
+            }
+            .custom .item .pic {
+                width: 50%;
+            }
+            .custom .item .pic img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .custom .item .txt {
+                width: 50%;
+                padding: 20px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .custom .item .txt h2 {
+                margin-bottom: 0.4em;
+                font-weight: 900;
+            }
+            .custom .item .txt p {
+                font-weight: 300;
+            }
+            .custom .item .txt .btn {
+                line-height: 1.5em;
+                border: 1px solid #ccc;
+                padding: 0 1em;
+                align-self: flex-end;
+                text-decoration: none;
+                border-radius: 200px;
+                margin-top: auto;
+                color: #aaa;
+            }
+            .custom .item .txt .btn:hover {
+                background-color: #ccc;
+                color: #fff;
+            }
+        </style>
+
+        <div class="custom">
+            <div class="container">
+                <h1>Lasote gooleed daeet</h1>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/400/400?random=10" />
+                    </div>
+                    <div class="txt">
+                        <h2>McClintock</h2>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not
+                            simply random text. It has roots in a piece of
+                            classical Latin literature from 45 BC, making it
+                            over 2000 years old.
+                        </p>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/400/400?random=20" />
+                    </div>
+                    <div class="txt">
+                        <h2>Lorem Ipsum</h2>
+                        <p>
+                            All the Lorem Ipsum generators on the Internet tend
+                            to repeat predefined chunks as necessary, making
+                            this the first true generator on the Internet.
+                        </p>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/400/400?random=30" />
+                    </div>
+                    <div class="txt">
+                        <h2>H. Rackham</h2>
+                        <p>
+                            But I must explain to you how all this mistaken idea
+                            of denouncing pleasure and praising pain was born
+                            and I will give you a complete account of the
+                            system.
+                        </p>
+                        <a href="#" class="btn">more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .tri-custom {
+                width: 1200px;
+                margin: 150px auto;
+                background-color: #fff;
+                align-items: center;
+                display: flex;
+            }
+            .tri-custom .container h1 {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 80px;
+                margin-bottom: 0.5em;
+                display: flex;
+            }
+            .tri-custom .container h1::before,
+            .tri-custom .container h1::after {
+                content: '';
+                display: block;
+                flex-grow: 1;
+                height: 3px;
+                margin: auto;
+                background-color: #000;
+            }
+            .tri-custom .container h1::before {
+                margin-right: 10px;
+            }
+            .tri-custom .container h1::after {
+                margin-left: 10px;
+            }
+            .tri-custom .item {
+                width: 368px;
+                height: 600px;
+                margin: 15px;
+                text-align: center;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                transform: translateY(0);
+                transition: 0.5s;
+            }
+            .tri-custom .item img {
+                width: 100%;
+                vertical-align: middle;
+            }
+            .tri-custom .item h2 {
+                border-bottom: 1px solid #888;
+                padding-bottom: 0.3em;
+                margin-bottom: 0.4em;
+                font-weight: 900;
+                transition: 0.5s;
+            }
+            .tri-custom .item p {
+                line-height: 1.5;
+                font-weight: 100;
+                transition: 0.5s;
+            }
+            .tri-custom .item .txt {
+                padding: 20px;
+                position: relative;
+            }
+            .tri-custom .item .txt:before {
+                position: absolute;
+                content: '';
+                width: 0;
+                height: 0;
+                left: 0;
+                top: 0;
+                border-top: 50px solid transparent;
+                border-left: 184px solid #fff;
+                border-right: 184px solid #fff;
+                transform: translateY(-100%);
+            }
+            .tri-custom .item:hover {
+                transform: translateY(-20px);
+                background-image: linear-gradient(0deg, #fb8076, #feb85d 30%);
+            }
+            .tri-custom .item:hover h2 {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+            .tri-custom .item:hover p {
+                color: #fff;
+            }
+            .tri-custom .item:hover .txt::before {
+                border-left: 184px solid #feb85d;
+                border-right: 184px solid #feb85d;
+            }
+        </style>
+
+        <div class="tri-custom">
+            <div class="item">
+                <img src="https://picsum.photos/300/300?random=10" />
+                <div class="txt">
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Auctor neque vitae tempus quam.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/300/300?random=20" />
+                <div class="txt">
+                    <h2>adipiscing</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Feugiat nisl pretium fusce id velit ut.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/300/300?random=30" />
+                <div class="txt">
+                    <h2>consectetur</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ipsum dolor sit amet consectetur
+                        adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .main-footer {
+                padding: 50px 0 0 0;
+                background: linear-gradient(-20deg, #3f5494, #08c7a5);
+            }
+            .main-footer .container {
+                display: flex;
+                width: 1200px;
+            }
+            .footer-item {
+                width: 0;
+                flex-grow: 1;
+                margin: 0 20px;
+            }
+            .footer-item h4 {
+                font-size: 24px;
+                color: #fff;
+                border-bottom: 1px dotted #fff;
+                margin-bottom: 0.5em;
+                padding: 0.5em;
+            }
+            .footer-item nav {
+                display: flex;
+                flex-direction: column;
+            }
+            .footer-item nav a {
+                color: #fff;
+                line-height: 1.4;
+                text-decoration: none;
+                padding: 5px 0;
+            }
+            .footer-item nav a:hover {
+                color: #fa0;
+            }
+            .footer-subs {
+                display: flex;
+                flex-direction: column;
+            }
+            .footer-subs form {
+                display: flex;
+                width: 100%;
+                margin: auto 0;
+            }
+            .footer-subs input[type='text'],
+            .footer-subs input[type='submit'] {
+                border: none;
+                padding: 5px 10px;
+            }
+            .footer-subs input[type='text'] {
+                width: 0;
+                flex-grow: 1;
+            }
+            .footer-subs input[type='submit'] {
+                color: #70f6df;
+                background-color: #3e5293;
+            }
+            .copyright {
+                width: 100%;
+                text-align: center;
+                margin: 50px 0 0;
+                padding: 10px 0;
+                background-color: #3e5293;
+                color: #70f6df;
+            }
+        </style>
+
+        <div class="main-footer">
+            <div class="container">
+                <div class="footer-item">
+                    <h4>關於暴力課程</h4>
+                    <nav>
+                        <a href="#">> 課程目標</a>
+                        <a href="#">> 教學理念</a>
+                        <a href="#">> 課程宗旨</a>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <h4>課程列表</h4>
+                    <nav>
+                        <a href="#">> 暴力網頁入門班</a>
+                        <a href="#">> RWD網頁深入理解</a>
+                        <a href="#">> CSS3互動動畫設計</a>
+                        <a href="#">> Bootstrap框架實務</a>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <h4>服務項目</h4>
+                    <nav>
+                        <a href="#">> 網站建置顧問</a>
+                        <a href="#">> 網站設計建置</a>
+                        <a href="#">> 網站規劃</a>
+                        <a href="#">> 企業教育訓練</a>
+                    </nav>
+                </div>
+                <div class="footer-item footer-subs">
+                    <h4>訂閱電子報</h4>
+                    <form action="">
+                        <input type="text" name="" id="" />
+                        <input type="submit" value="訂閱" />
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">Copyright &copy; 2022 Chris Wu</div>
+        </div>
+    </body>
+</html>

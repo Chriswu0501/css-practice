@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:500,700,900"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            body {
+                padding: 100px 0;
+                /* x & y / width & height */
+                background: linear-gradient(20deg, #3d5493, #1aa2a0) fixed
+                    center center / 100% 100%;
+            }
+            .wrap {
+                width: 1200px;
+                margin: auto;
+            }
+            .item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 70px;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            .item h2 {
+                font-weight: 900;
+            }
+            .item p {
+                font-weight: 500;
+            }
+            .item .pic {
+                width: 55%;
+                flex-shrink: 0;
+            }
+            .item .pic img {
+                width: 100%;
+                vertical-align: middle;
+            }
+            .item .txt {
+                width: 55%;
+                flex-shrink: 0;
+                padding: 50px 30px;
+                box-sizing: border-box;
+                position: relative;
+                z-index: 1;
+            }
+            .item > :first-child {
+                margin-right: -10%;
+            }
+            .item:nth-child(1) .txt {
+                background-color: rgba(240, 174, 193, 0.7);
+            }
+            .item:nth-child(2) .txt {
+                background-color: rgba(42, 253, 208, 0.7);
+            }
+            .item:nth-child(3) .txt {
+                background-color: rgba(254, 201, 121, 0.7);
+            }
+            .item:nth-child(4) .txt {
+                background-color: rgba(149, 219, 214, 0.7);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- item 1 -->
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/600/350?random=10" />
+                </div>
+                <div class="txt">
+                    <h2>Lorem ipsum</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Enim nec dui nunc mattis enim ut tellus
+                        elementum sagittis. Aliquet bibendum enim facilisis
+                        gravida neque convallis.
+                    </p>
+                </div>
+            </div>
+            <!-- item 2 -->
+            <div class="item">
+                <div class="txt">
+                    <h2>long established</h2>
+                    <p>
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout.
+                    </p>
+                </div>
+                <div class="pic">
+                    <img src="https://picsum.photos/600/350?random=20" />
+                </div>
+            </div>
+            <!-- item 3 -->
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/600/350?random=30" />
+                </div>
+                <div class="txt">
+                    <h2>variations of passages</h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour, or randomised words which
+                        don't look even slightly believable.
+                    </p>
+                </div>
+            </div>
+            <!-- item 4 -->
+            <div class="item">
+                <div class="txt">
+                    <h2>Contrary to popular belief</h2>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <div class="pic">
+                    <img src="https://picsum.photos/600/350?random=40" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
